@@ -1,0 +1,51 @@
+Last login: Thu Oct  7 23:34:10 on ttys001
+heekyung@namhuigyeong-ui-MacBookPro ~ % cd /Users/heekyung/Documents/heekyung 
+heekyung@namhuigyeong-ui-MacBookPro heekyung % npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (boiler-plate) nodeserver
+version: (1.0.0) 
+description: nodeserver test
+git repository: 
+keywords: 
+license: (ISC) 
+About to write to /Users/heekyung/Documents/heekyung/package.json:
+
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "nodeserver test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Heekyung",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {}
+}
+
+
+Is this OK? (yes) yes
+heekyung@namhuigyeong-ui-MacBookPro heekyung % cd /Users/heekyung/Documents/heekyung
+heekyung@namhuigyeong-ui-MacBookPro heekyung % npm install express --save
+npm WARN nodeserver@1.0.0 No repository field.
+
++ express@4.17.1
+updated 3 packages and audited 59 packages in 1.552s
+found 0 vulnerabilities
+
+heekyung@namhuigyeong-ui-MacBookPro heekyung % node app.js
+start! express server on port 3000
